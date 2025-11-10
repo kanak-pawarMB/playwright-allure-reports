@@ -1,3 +1,0 @@
-🩻 Saved page HTML snapshot -> debug-referrals.html
-✅ "Select Payer" dropdown is visible
-📸 Screenshot captured after clicking Select Payer

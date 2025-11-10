@@ -6,3 +6,7 @@ node_modules/
 
 # Playwright report (optional - keep or remove if you want to track reports)
 playwright-report/
+// Allure reports and results - generated artifacts
+allure-report/
+allure-results/
+allure-report.zip
