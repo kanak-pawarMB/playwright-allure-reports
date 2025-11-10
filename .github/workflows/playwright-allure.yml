@@ -37,7 +37,7 @@ jobs:
         if: ${{ env.HAS_AUTH_JSON == 'true' }}
         run: |
           echo "Restoring auth.json from secret..."
-          echo "${{ secrets.AUTH_JSON_BASE64 }}" | base64 --decode > auth.json
+          echo "${{ secrets.AUTH_JSON_BASE64 }}" > auth.json
           ls -l auth.json || true
         shell: bash
         env:
