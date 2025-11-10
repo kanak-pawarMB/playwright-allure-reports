@@ -32,20 +32,22 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # ✅ Fixed conditional check — use 'env' or fallback approach
       - name: Restore pre-recorded auth.json from secret (optional)
-        if: ${{ secrets.AUTH_JSON_BASE64 != '' }}
+        if: ${{ env.HAS_AUTH_JSON == 'true' }}
         run: |
           echo "Restoring auth.json from secret..."
           echo "${{ secrets.AUTH_JSON_BASE64 }}" | base64 --decode > auth.json
           ls -l auth.json || true
         shell: bash
+        env:
+          HAS_AUTH_JSON: ${{ secrets.AUTH_JSON_BASE64 != '' && 'true' || 'false' }}
 
       - name: Run Playwright tests with Allure reporter
         run: npm run test:allure
         env:
-          # Store your credentials as repository secrets
-          GOOGLE_EMAIL: ${{ secrets.GOOGLE_EMAIL || '' }}
-          GOOGLE_PASSWORD: ${{ secrets.GOOGLE_PASSWORD || '' }}
+          GOOGLE_EMAIL: ${{ secrets.GOOGLE_EMAIL }}
+          GOOGLE_PASSWORD: ${{ secrets.GOOGLE_PASSWORD }}
 
       - name: Generate Allure HTML report
         run: npm run allure:generate
