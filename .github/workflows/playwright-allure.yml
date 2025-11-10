@@ -11,6 +11,7 @@ jobs:
   test-and-report:
     runs-on: ubuntu-latest
     name: Run Playwright tests and produce Allure report
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -32,18 +33,17 @@ jobs:
         run: npm ci
 
       - name: Restore pre-recorded auth.json from secret (optional)
-        if: ${{ secrets.AUTH_JSON_BASE64 }}
+        if: ${{ secrets.AUTH_JSON_BASE64 != '' }}
         run: |
           echo "Restoring auth.json from secret..."
-          echo ${{ secrets.AUTH_JSON_BASE64 }} | base64 --decode > auth.json
+          echo "${{ secrets.AUTH_JSON_BASE64 }}" | base64 --decode > auth.json
           ls -l auth.json || true
         shell: bash
 
       - name: Run Playwright tests with Allure reporter
-        # This runs all tests, writes allure-results into ./allure-results
         run: npm run test:allure
         env:
-          # If your tests need credentials, store them as repo secrets and set them here
+          # Store your credentials as repository secrets
           GOOGLE_EMAIL: ${{ secrets.GOOGLE_EMAIL || '' }}
           GOOGLE_PASSWORD: ${{ secrets.GOOGLE_PASSWORD || '' }}
 
@@ -63,12 +63,10 @@ jobs:
           path: allure-report
 
       - name: Publish Allure report to GitHub Pages
-        # Publish the generated Allure HTML to the gh-pages branch so it is viewable via GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./allure-report
           publish_branch: gh-pages
-          # Use the default GitHub Actions bot identity to commit the published report
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
