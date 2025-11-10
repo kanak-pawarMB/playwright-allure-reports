@@ -1,0 +1,8 @@
+# Ignore saved authentication state
+auth.json
+
+# Node modules
+node_modules/
+
+# Playwright report (optional - keep or remove if you want to track reports)
+playwright-report/

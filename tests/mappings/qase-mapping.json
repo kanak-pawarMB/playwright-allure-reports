@@ -1,0 +1,275 @@
+[
+  {
+    "qase_id": 1,
+    "qase_code": "QASE-1",
+    "title": "[Functional] Display referral list with correct columns",
+    "test_file": "tests\\generated\\QASE-1--Functional--Display-referral-list-with-correct-columns.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 2,
+    "qase_code": "QASE-2",
+    "title": "[Functional] Create Patient button appears for new referrals",
+    "test_file": "tests\\generated\\QASE-2--Functional--Create-Patient-button-appears-for-new-referrals.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 3,
+    "qase_code": "QASE-3",
+    "title": "[Functional] Schedule button appears for existing patients",
+    "test_file": "tests\\generated\\QASE-3--Functional--Schedule-button-appears-for-existing-patients.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 4,
+    "qase_code": "QASE-4",
+    "title": "[Functional] Open patient details popup on row click",
+    "test_file": "tests\\generated\\QASE-4--Functional--Open-patient-details-popup-on-row-click.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 5,
+    "qase_code": "QASE-5",
+    "title": "[Functional] Schedule Appointment with provider and time slot",
+    "test_file": "tests\\generated\\QASE-5--Functional--Schedule-Appointment-with-provider-and-time-slot.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 6,
+    "qase_code": "QASE-6",
+    "title": "[Negative] Fail to create patient if required fields are missing",
+    "test_file": "tests\\generated\\QASE-6--Negative--Fail-to-create-patient-if-required-fields-are-missing.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 7,
+    "qase_code": "QASE-7",
+    "title": "[Integration] Sync Now updates referral list from Monday.com",
+    "test_file": "tests\\generated\\QASE-7--Integration--Sync-Now-updates-referral-list-from-Monday.com.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 8,
+    "qase_code": "QASE-8",
+    "title": "[Edge] No referral data returns empty table message",
+    "test_file": "tests\\generated\\QASE-8--Edge--No-referral-data-returns-empty-table-message.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 9,
+    "qase_code": "QASE-9",
+    "title": "[UI/UX] Verify 'Last Sync' timestamp and Sync Now button",
+    "test_file": "tests\\generated\\QASE-9--UI-UX--Verify--Last-Sync--timestamp-and-Sync-Now-button.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 10,
+    "qase_code": "QASE-10",
+    "title": "[Integration] Verify daily cron job runs at 5:30 AM PST/PDT",
+    "test_file": "tests\\generated\\QASE-10--Integration--Verify-daily-cron-job-runs-at-5-30-AM-PST-PDT.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 237,
+    "qase_code": "QASE-237",
+    "title": "Referral Type column > type of referrals in column",
+    "test_file": "tests\\generated\\QASE-237-Referral-Type-column---type-of-referrals-in-column.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 238,
+    "qase_code": "QASE-238",
+    "title": "Referral Type column > Empty field must display \"N/A\"",
+    "test_file": "tests\\generated\\QASE-238-Referral-Type-column---Empty-field-must-display--N-A-.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 239,
+    "qase_code": "QASE-239",
+    "title": "Referral Type filter drop down > Placement",
+    "test_file": "tests\\generated\\QASE-239-Referral-Type-filter-drop-down---Placement.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 240,
+    "qase_code": "QASE-240",
+    "title": "Referral Type filter drop down > Heading",
+    "test_file": "tests\\generated\\QASE-240-Referral-Type-filter-drop-down---Heading.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 241,
+    "qase_code": "QASE-241",
+    "title": "\"Select Referral Type\" > drop down options",
+    "test_file": "tests\\generated\\QASE-241--Select-Referral-Type----drop-down-options.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 242,
+    "qase_code": "QASE-242",
+    "title": "\"Select Referral Type\" > Selecting on particular option must sort the Referral List accordingly",
+    "test_file": "tests\\generated\\QASE-242--Select-Referral-Type----Selecting-on-particular-option-must-sort-the-Referral-List-accordingly.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 243,
+    "qase_code": "QASE-243",
+    "title": "\"Select Referral Type\" > Ensuring no issues with other filter combinations",
+    "test_file": "tests\\generated\\QASE-243--Select-Referral-Type----Ensuring-no-issues-with-other-filter-combinations.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 244,
+    "qase_code": "QASE-244",
+    "title": "Referral Type > Access to Admin & Super admin",
+    "test_file": "tests\\generated\\QASE-244-Referral-Type---Access-to-Admin---Super-admin.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 246,
+    "qase_code": "QASE-246",
+    "title": "Referral Type column > Placement",
+    "test_file": "tests\\generated\\QASE-246-Referral-Type-column---Placement.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 249,
+    "qase_code": "QASE-249",
+    "title": "\"Select Referral Type\" > filter drop down supports multi-select and displays correct options",
+    "test_file": "tests\\generated\\QASE-249--Select-Referral-Type----filter-drop-down-supports-multi-select-and-displays-correct-options.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 250,
+    "qase_code": "QASE-250",
+    "title": "\"Select Referral Type\" > deselect single and all options",
+    "test_file": "tests\\generated\\QASE-250--Select-Referral-Type----deselect-single-and-all-options.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 251,
+    "qase_code": "QASE-251",
+    "title": "\"Select Payer\" > filter drop down supports multi-select and displays correct options",
+    "test_file": "tests\\generated\\QASE-251--Select-Payer----filter-drop-down-supports-multi-select-and-displays-correct-options.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 252,
+    "qase_code": "QASE-252",
+    "title": "\"Select Payer\" > deselect single and all options",
+    "test_file": "tests\\generated\\QASE-252--Select-Payer----deselect-single-and-all-options.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 284,
+    "qase_code": "QASE-284",
+    "title": "Sync Now > Success message",
+    "test_file": "tests\\generated\\QASE-284-Sync-Now---Success-message.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 285,
+    "qase_code": "QASE-285",
+    "title": "Sync Now > Failed message",
+    "test_file": "tests\\generated\\QASE-285-Sync-Now---Failed-message.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 299,
+    "qase_code": "QASE-299",
+    "title": "Sync Now > Disable button during sync with loading state & disabled cursor",
+    "test_file": "tests\\generated\\QASE-299-Sync-Now---Disable-button-during-sync-with-loading-state---disabled-cursor.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 301,
+    "qase_code": "QASE-301",
+    "title": "[Functional] Display filters with correct sequence & options",
+    "test_file": "tests\\generated\\QASE-301--Functional--Display-filters-with-correct-sequence---options.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 11,
+    "qase_code": "QASE-11",
+    "title": "[Smoke]-Referral List loads successfully with expected columns",
+    "test_file": "tests\\generated\\QASE-11--Smoke--Referral-List-loads-successfully-with-expected-columns.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 12,
+    "qase_code": "QASE-12",
+    "title": "[Smoke]-Sync Now button fetches latest referrals",
+    "test_file": "tests\\generated\\QASE-12--Smoke--Sync-Now-button-fetches-latest-referrals.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 13,
+    "qase_code": "QASE-13",
+    "title": "[Smoke]-Patient detail popup appears on clicking a referral row",
+    "test_file": "tests\\generated\\QASE-13--Smoke--Patient-detail-popup-appears-on-clicking-a-referral-row.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 14,
+    "qase_code": "QASE-14",
+    "title": "[Smoke]-Create Patient button is visible if patient does not exist in Healthie",
+    "test_file": "tests\\generated\\QASE-14--Smoke--Create-Patient-button-is-visible-if-patient-does-not-exist-in-Healthie.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 15,
+    "qase_code": "QASE-15",
+    "title": "[Smoke]-Successful patient creation",
+    "test_file": "tests\\generated\\QASE-15--Smoke--Successful-patient-creation.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 16,
+    "qase_code": "QASE-16",
+    "title": "[Smoke]-Schedule popup appears after clicking Schedule Appointment",
+    "test_file": "tests\\generated\\QASE-16--Smoke--Schedule-popup-appears-after-clicking-Schedule-Appointment.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 17,
+    "qase_code": "QASE-17",
+    "title": "[Smoke]-Appointment scheduled with valid inputs",
+    "test_file": "tests\\generated\\QASE-17--Smoke--Appointment-scheduled-with-valid-inputs.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 18,
+    "qase_code": "QASE-18",
+    "title": "[Smoke]-Close button dismisses patient detail popup",
+    "test_file": "tests\\generated\\QASE-18--Smoke--Close-button-dismisses-patient-detail-popup.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 19,
+    "qase_code": "QASE-19",
+    "title": "[Smoke]-Verify all appointment types are available in dropdown",
+    "test_file": "tests\\generated\\QASE-19--Smoke--Verify-all-appointment-types-are-available-in-dropdown.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 20,
+    "qase_code": "QASE-20",
+    "title": "[Smoke] Open patient details popup on row click",
+    "test_file": "tests\\generated\\QASE-20--Smoke--Open-patient-details-popup-on-row-click.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 247,
+    "qase_code": "QASE-247",
+    "title": "[Smoke]-Referral List loads successfully with expected filter options",
+    "test_file": "tests\\generated\\QASE-247--Smoke--Referral-List-loads-successfully-with-expected-filter-options.spec.ts",
+    "skip": false
+  },
+  {
+    "qase_id": 248,
+    "qase_code": "QASE-248",
+    "title": "[Smoke]-Verify all Referral Types are available in drop down",
+    "test_file": "tests\\generated\\QASE-248--Smoke--Verify-all-Referral-Types-are-available-in-drop-down.spec.ts",
+    "skip": false
+  }
+]

@@ -1,0 +1,7 @@
+✅ Opened login page
+🔍 Page title: Wellity Health Referral Management Platform
+📸 Screenshot captured: debug-login-page.png
+ℹ️ Session appears already authenticated — skipping Google sign-in flow.
+⚠️ No Google sign-in page detected within timeout — manual intervention may be required.
+✅ Logged in successfully.
+💾 Session saved to auth.json

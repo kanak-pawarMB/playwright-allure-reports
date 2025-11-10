@@ -1,0 +1,66 @@
+name: Playwright tests → Allure
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch: {}
+
+jobs:
+  test-and-report:
+    runs-on: ubuntu-latest
+    name: Run Playwright tests and produce Allure report
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Cache node modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json', '**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Playwright tests with Allure reporter
+        # This runs all tests, writes allure-results into ./allure-results
+        run: npm run test:allure
+        env:
+          # If your tests need credentials, store them as repo secrets and set them here
+          GOOGLE_EMAIL: ${{ secrets.GOOGLE_EMAIL || '' }}
+          GOOGLE_PASSWORD: ${{ secrets.GOOGLE_PASSWORD || '' }}
+
+      - name: Generate Allure HTML report
+        run: npm run allure:generate
+
+      - name: Upload Allure results (raw)
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results
+
+      - name: Upload Allure HTML report
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report
+
+      - name: Publish Allure report to GitHub Pages
+        # Publish the generated Allure HTML to the gh-pages branch so it is viewable via GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./allure-report
+          publish_branch: gh-pages
+          # Use the default GitHub Actions bot identity to commit the published report
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
