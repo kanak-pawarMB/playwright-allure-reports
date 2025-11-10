@@ -13,7 +13,7 @@ Preconditions
 How it publishes
 - After tests finish, the job runs `npm run allure:generate` which produces `allure-report/`.
 - The workflow then uses `peaceiris/actions-gh-pages` to push the `allure-report/` folder to the `gh-pages` branch.
-- The action uses the built-in `GITHUB_TOKEN` to commit the published report. No extra token is required.
+- The action uses the built-in `repo_token` to commit the published report. No extra token is required.
 
 Enable GitHub Pages (one-time in repo settings)
 1. Go to your repository on GitHub.

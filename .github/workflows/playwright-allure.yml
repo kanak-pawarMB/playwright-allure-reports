@@ -72,7 +72,7 @@ jobs:
         if: always() # publish even if tests fail
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ secrets.REPO_TOKEN }}
           publish_dir: ./allure-report
           publish_branch: gh-pages
           user_name: github-actions[bot]
