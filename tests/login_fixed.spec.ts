@@ -200,8 +200,3 @@ test('Perform Google login and save session', async ({ page }) => {
   await page.context().storageState({ path: 'auth.json' });
   console.log('💾 Session saved to auth.json');
 });
-
-
-
-
-

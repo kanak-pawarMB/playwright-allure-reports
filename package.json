@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test",
-    "test:chromium": "playwright test --project=Chromium",
-    "test:report": "playwright test --project=Chromium --reporter=html",
-    "test:ci": "playwright test --project=Chromium --reporter=list",
-    "auth:record": "playwright test tests\\login.spec.ts -g \"Perform Google login and save session\" --headed --project=Chromium",
-    "test:allure": "playwright test --project=Chromium --reporter=list --reporter=allure-playwright",
-    "allure:generate": "allure generate allure-results --clean -o allure-report",
-    "allure:open": "allure open allure-report"
-  },
+  "test": "playwright test",
+  "test:chromium": "playwright test --project=Chromium",
+  "test:report": "playwright test --project=Chromium --reporter=html",
+  "test:ci": "playwright test --project=Chromium --reporter=list",
+  "auth:record": "playwright test tests\\login.spec.ts -g \"Perform Google login and save session\" --headed --project=Chromium",
+  "test:allure": "playwright test --project=Chromium --reporter=list --reporter=allure-playwright",
+  "allure:generate": "allure generate allure-results --clean -o allure-report",
+  "allure:open": "allure open allure-report",
+  "allure:publish": "npm run allure:generate && if exist docs rmdir /s /q docs && mkdir docs && xcopy allure-report docs /E /I /Y"
+
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -20,7 +22,8 @@
   "devDependencies": {
     "@playwright/test": "^1.56.1",
     "@types/node": "^20.0.0",
+    "allure-commandline": "^2.16.0",
     "allure-playwright": "^2.2.0",
-    "allure-commandline": "^2.16.0"
+    "gh-pages": "^6.3.0"
   }
 }
