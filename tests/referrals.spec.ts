@@ -13,6 +13,30 @@ async function goToReferralsAndWait(page: any) {
   await page.goto(`${BASE}/referrals`);
   // wait for network + main UI element
   await page.waitForLoadState('networkidle');
+
+  // If we were redirected to the login page despite having a local `auth.json`,
+  // try restoring localStorage from the recorded `auth.json` as a fallback.
+  try {
+    const current = page.url();
+    if (current.includes('/login') && fs.existsSync('auth.json')) {
+      const raw = fs.readFileSync('auth.json', 'utf8');
+      const parsed = JSON.parse(raw);
+      const originEntry = (parsed.origins || []).find((o: any) => o.origin === BASE);
+      if (originEntry && originEntry.localStorage) {
+        for (const kv of originEntry.localStorage) {
+          const name = kv.name;
+          const value = kv.value;
+          // provide explicit tuple typing to avoid implicit any compile errors
+          await page.evaluate(([k, v]: [string, string]) => localStorage.setItem(k, v), [name, value]);
+        }
+        // reload and wait for app to pick up authenticated state
+        await page.reload({ waitUntil: 'networkidle' });
+      }
+    }
+  } catch (e) {
+    console.warn('Could not restore localStorage from auth.json fallback:', e);
+  }
+
   // Wait for either the heading or the table to appear to be resilient to small DOM changes
   await Promise.race([
     page.waitForSelector('text=/Referral List/i', { timeout: 15000 }).catch(() => null),

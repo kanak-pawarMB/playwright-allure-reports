@@ -68,12 +68,11 @@ jobs:
           name: allure-report
           path: allure-report
 
-      - name: Publish Allure report to GitHub Pages
-        if: always() # publish even if tests fail
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          repo_token: ${{ secrets.REPO_TOKEN }}
-          publish_dir: ./allure-report
-          publish_branch: gh-pages
-          user_name: github-actions[bot]
-          user_email: 41898282+github-actions[bot]@users.noreply.github.com
+      - - name: Publish Allure report to GitHub Pages
+  uses: peaceiris/actions-gh-pages@v4
+  with:
+    github_token: ${{ secrets.GITHUB_TOKEN }}
+    publish_dir: ./allure-report
+    publish_branch: gh-pages
+    user_name: github-actions[bot]
+    user_email: 41898282+github-actions[bot]@users.noreply.github.com
