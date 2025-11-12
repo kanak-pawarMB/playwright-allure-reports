@@ -1,0 +1,15 @@
+✅ Opened login page
+🔍 Page title: Wellity Health Referral Management Platform
+📸 Screenshot captured: debug-login-page.png
+🔎 Google text matches on page: 3
+🔎 Matched elements inner texts: [
+  'Sign in with Google',
+  'Sign in with Google. Opens in new tab',
+  'Sign in with Google'
+]
+✅ Clicked Google Sign-In control
+✅ Google sign-in page detected (popup or redirect).
+⚠️ GOOGLE_* not set — restoring client localStorage from auth.json instead of automated login.
+✅ Restored 2 cookies for app domain from auth.json
+✅ Restored client localStorage from auth.json and reloaded.
+🔁 Post-login UI not detected; navigating to /referrals to check session

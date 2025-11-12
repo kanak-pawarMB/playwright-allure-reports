@@ -1,0 +1,5 @@
+✅ Opened login page
+🔍 Page title: Wellity Health Referral Management Platform
+📸 Screenshot captured: debug-login-page.png
+🔁 Found auth.json — validating recorded session by opening /referrals
+✅ Recorded session appears valid — skipping automated Google login.

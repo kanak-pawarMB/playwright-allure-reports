@@ -1,0 +1,2 @@
+Found 1 elements containing "Select Payer" text
+Element 0: visible=true, box={"x":393.5,"y":195,"width":74.84375,"height":20}

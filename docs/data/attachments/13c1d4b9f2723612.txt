@@ -1,0 +1,18 @@
+🔍 Parent element HTML: <button class="inline-flex items-center gap-2 whitespace-nowrap focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border-input hover:bg-accent hover:text-accent-foreground w-full h-10 px-3 py-2 text-sm border rounded-md justify-between text-left font-normal transition-all bg-background ring-offset-background focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0" role="combobox" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:rb:" data-state="closed"><span class="truncate text-sm">Select payer</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down ml-2 h-4 w-4 shrink-0 opacity-50"><path d="m6 9 6 6 6-6"></path></svg></button>
+🧠 Visible DIVs snapshot: [
+  '<div id="root"><div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;"><ol tabindex="-1" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></ol></div><section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="fals',
+  '<div class=" bg-gray-50 flex flex-col h-screen overflow-hidden"><header class="sticky top-0 bg-white border-b border-primary/10 px-6 py-2 flex items-center justify-between h-12 z-30 w-full"><div class="flex items-center gap-4"><img src="/lovable-uploads/7b73d5fb-7d01-44be-b553-bcaf8e6122e3.png" alt="Wellity Health" class="h-8 w-auto"></div><div class="flex items-center"><div class="flex items-cent',
+  '<div class="flex items-center gap-4"><img src="/lovable-uploads/7b73d5fb-7d01-44be-b553-bcaf8e6122e3.png" alt="Wellity Health" class="h-8 w-auto"></div>',
+  '<div class="flex items-center"><div class="flex items-center space-x-3 p-2 cursor-pointer rounded-md\n' +
+    '                            hover:bg-gray-50 transition-colors\n' +
+    '                            outline-none border-none ring-0 shadow-none\n' +
+    '                            focus:outline-none focus:ring-0 focus:border-none\n' +
+    '                            focus-visible:outline-none focus-visible:ring-0\n' +
+    '          ',
+  '<div class="flex items-center space-x-3 p-2 cursor-pointer rounded-md\n' +
+    '                            hover:bg-gray-50 transition-colors\n' +
+    '                            outline-none border-none ring-0 shadow-none\n' +
+    '                            focus:outline-none focus:ring-0 focus:border-none\n' +
+    '                            focus-visible:outline-none focus-visible:ring-0\n' +
+    '                            focus-visible'
+]

@@ -1,0 +1,132 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - img "Wellity Health" [ref=e6]
+      - button "User menu" [ref=e8] [cursor=pointer]:
+        - img "Kanak Pawar" [ref=e10]
+        - generic [ref=e11]:
+          - paragraph [ref=e12]: Kanak Pawar
+          - paragraph [ref=e13]: Admin
+    - generic [ref=e15]:
+      - list [ref=e23]:
+        - listitem [ref=e24]:
+          - button [ref=e25] [cursor=pointer]:
+            - img [ref=e26]
+        - listitem [ref=e29]:
+          - button [ref=e30] [cursor=pointer]:
+            - img [ref=e31]
+        - listitem [ref=e36]:
+          - button [ref=e37] [cursor=pointer]:
+            - img [ref=e38]
+        - listitem [ref=e42]:
+          - button [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+        - listitem [ref=e46]:
+          - button [ref=e47] [cursor=pointer]:
+            - img [ref=e48]
+        - listitem [ref=e51]:
+          - button [ref=e52] [cursor=pointer]:
+            - img [ref=e53]
+      - main [ref=e57]:
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - heading "Referral List" [level=1] [ref=e61]
+            - generic [ref=e62]:
+              - generic [ref=e63]: "Last Sync: 11/12/2025 05:30 AM"
+              - button "Sync Now" [ref=e65] [cursor=pointer]:
+                - img
+                - text: Sync Now
+          - generic [ref=e66]:
+            - generic [ref=e68]:
+              - heading "Filters" [level=3] [ref=e70]
+              - button "Clear All" [ref=e72] [cursor=pointer]:
+                - img
+                - text: Clear All
+            - generic [ref=e74]:
+              - generic [ref=e76]:
+                - img [ref=e78]
+                - textbox "Search by patient name" [active] [ref=e82]: Miriam
+              - combobox [ref=e85] [cursor=pointer]:
+                - generic [ref=e86]: Select payer
+                - img
+              - combobox [ref=e89] [cursor=pointer]:
+                - generic [ref=e90]: Select referral type
+                - img
+              - button "Select referral date range" [ref=e92] [cursor=pointer]:
+                - text: Select referral date range
+                - img
+          - generic [ref=e93]:
+            - heading "Patients (3)" [level=3] [ref=e97]
+            - table [ref=e100]:
+              - rowgroup [ref=e101]:
+                - row "Patient Name Member ID Medi-Cal ID DOB Sex Referral Date Referral Type Payer Action" [ref=e102]:
+                  - cell "Patient Name" [ref=e103]:
+                    - generic [ref=e105]: Patient Name
+                  - cell "Member ID" [ref=e106]:
+                    - generic [ref=e108]: Member ID
+                  - cell "Medi-Cal ID" [ref=e109]:
+                    - generic [ref=e111]: Medi-Cal ID
+                  - cell "DOB" [ref=e112]:
+                    - generic [ref=e114]: DOB
+                  - cell "Sex" [ref=e115]:
+                    - generic [ref=e117]: Sex
+                  - cell "Referral Date" [ref=e118]:
+                    - generic [ref=e120]: Referral Date
+                  - cell "Referral Type" [ref=e121]:
+                    - generic [ref=e123]: Referral Type
+                  - cell "Payer" [ref=e124]:
+                    - generic [ref=e126]: Payer
+                  - cell "Action" [ref=e127]:
+                    - generic [ref=e129]: Action
+              - rowgroup [ref=e130]:
+                - row "Miriam Ortega 024291951 99346794E 02/05/2003 Male 11/10/2025 THERAPY CCHP Schedule Appointment" [ref=e131] [cursor=pointer]:
+                  - cell "Miriam Ortega" [ref=e132]
+                  - cell "024291951" [ref=e133]
+                  - cell "99346794E" [ref=e134]
+                  - cell "02/05/2003" [ref=e135]
+                  - cell "Male" [ref=e136]
+                  - cell "11/10/2025" [ref=e137]
+                  - cell "THERAPY" [ref=e138]
+                  - cell "CCHP" [ref=e139]
+                  - cell "Schedule Appointment" [ref=e140]:
+                    - button "Schedule Appointment" [ref=e142]:
+                      - img
+                      - text: Schedule Appointment
+                - row "Miriam Woodward N/A 92839466G 03/22/1994 N/A 09/30/2025 MED SCFHP Create Patient" [ref=e143] [cursor=pointer]:
+                  - cell "Miriam Woodward" [ref=e144]
+                  - cell "N/A" [ref=e145]
+                  - cell "92839466G" [ref=e146]
+                  - cell "03/22/1994" [ref=e147]
+                  - cell "N/A" [ref=e148]
+                  - cell "09/30/2025" [ref=e149]
+                  - cell "MED" [ref=e150]
+                  - cell "SCFHP" [ref=e151]
+                  - cell "Create Patient" [ref=e152]:
+                    - button "Create Patient" [ref=e154]:
+                      - img
+                      - text: Create Patient
+                - row "Miriam Burnett 428913903 N/A 01/15/1997 N/A 08/18/2025 MED HPSM Create Patient" [ref=e155] [cursor=pointer]:
+                  - cell "Miriam Burnett" [ref=e156]
+                  - cell "428913903" [ref=e157]
+                  - cell "N/A" [ref=e158]
+                  - cell "01/15/1997" [ref=e159]
+                  - cell "N/A" [ref=e160]
+                  - cell "08/18/2025" [ref=e161]
+                  - cell "MED" [ref=e162]
+                  - cell "HPSM" [ref=e163]
+                  - cell "Create Patient" [ref=e164]:
+                    - button "Create Patient" [ref=e166]:
+                      - img
+                      - text: Create Patient
+                - row "You've reached the end of the list" [ref=e167]:
+                  - cell "You've reached the end of the list" [ref=e168]:
+                    - generic [ref=e169]:
+                      - img [ref=e170]
+                      - generic [ref=e172]: You've reached the end of the list
+```

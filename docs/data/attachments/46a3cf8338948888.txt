@@ -1,0 +1,16 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - img "Wellity Health" [ref=e7]
+      - paragraph [ref=e8]: Access your Wellity Health Referral Management Platform
+    - button "Sign in with Google" [ref=e11] [cursor=pointer]:
+      - generic [ref=e12]:
+        - img
+        - text: Sign in with Google
+```

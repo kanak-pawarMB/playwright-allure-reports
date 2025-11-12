@@ -1,0 +1,3 @@
+Found 1 elements containing "Select payer" text
+Element 0: visible=true
+✅ Clicked on Select Payer dropdown successfully

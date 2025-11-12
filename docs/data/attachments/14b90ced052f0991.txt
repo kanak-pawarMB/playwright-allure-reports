@@ -1,0 +1,5 @@
+✅ Select Payer dropdown found and clicked
+📸 Screenshot captured: payer-dropdown-open.png
+📊 Found 7 dropdown options
+✅ Selected payer: AA
+📋 Table rows after filtering: 10
